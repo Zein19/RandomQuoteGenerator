@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body{
@@ -9,12 +10,15 @@ body{
     justify-content: center;
     align-items: center;
     padding: 2em;
+    background-image: url(sunset.jpg);
 }
 
 .container{
     border: solid 1px black;
     border-radius: 0.5em;
     padding: 2em;
+    background-color: beige;
+    width: 50%;
 }
 
 .heading{
@@ -25,14 +29,33 @@ body{
 .quote{
     font-size: 1.5rem;
     margin-top: 0.5em;
-    font-style: italic;
+
     font-weight: 100;
 }
 
 .author{
     font-size: 1rem;
     margin-top: 0.4em;
-    text-align: center;
+    text-align: right;
     font-style: bold;
+    opacity: 0.5;
+    font-style: italic;
+}
+
+#btn{
+    padding: 1em;
+    border-radius: 0.3em;
+}
+
+#btn:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .container{
+        width: auto;
+    }
+    
 }
 

@@ -10,7 +10,7 @@ const url = "https://api.quotable.io/random";
     fetch(url)
     .then((data) => data.json())
     .then((item) =>{
-        quote.innerText = item.content;
+        quote.innerText = `"${item.content}"`;
         author.innerText = item.author;
     });
  };
